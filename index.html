@@ -797,22 +797,28 @@
                 <h2>CONTACT ME </h2>
                 <p class="section-subtitle"><span>Here i am</span></p>
                 <div class="row">
-                    <form id="submit-form"  action="">
+                   
+                    <form id="submit-form"  action="" >
                         <div class="col-md-4">
-                            <input  name="fname"  class="form-control" type="text" placeholder="Name" required min="4" max="15">
+                            <input  name="fname"  class="form-control" type="text" placeholder="Name"  id="validate-name"  >
+                            
                         </div>
                         <div class="col-md-4">
-                            <input name="fmail" class="form-control" type="email" placeholder="Email" required>
+                            <input name="fmail" class="form-control" type="email" placeholder="Email" id="validate-Email" >
+                            
+
                         </div>
                         <div class="col-md-4">
-                            <input name="fsubject" class="form-control" type="text" placeholder="Subject" required>
+                            <input name="fnumber" class="form-control" type="text" placeholder="Phone Number" id="validate number">
+                           
                         </div>
                         <div class="col-sm-12">
-                            <textarea name="fmessage" class="form-control"  placeholder="Your Message"  required></textarea>
+                            <textarea name="fmessage" class="form-control"  placeholder="Your Message"   id="validate-message"></textarea>
+                            
                         </div>
 
                         <div class="col-sm-12">
-                            <button class="btn btn-inverted">Send Message</button>
+                            <button class="btn btn-inverted" id="submit"  >Send Message</button>
                         </div>  
                     </form>
                 </div>
@@ -1028,6 +1034,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery core js | Do not Delete -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>
 
     <!-- Bootstrap core js | Do not Delete -->
@@ -1054,7 +1061,7 @@
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
 
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>">
+     
 
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
     <script>
@@ -1075,6 +1082,6 @@
                 }
             })
         })
-    </script>
+    </script>  
   
 </body>
